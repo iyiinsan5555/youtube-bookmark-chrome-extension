@@ -1,10 +1,42 @@
-<link href="popup.css" rel="stylesheet" type="text/css" />
-<script type="module" src="popup.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YouTube Bookmarks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 300px;
+            padding: 10px;
+        }
+        #addBookmark {
+            margin-bottom: 10px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .bookmark {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+            background: #f1f1f1;
+            padding: 5px;
+            border-radius: 4px;
+        }
+        .bookmark button {
+            margin-left: 5px;
+        }
+        .title {
+            font-size: 14px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h3>YouTube Bookmarks</h3>
+    <button id="addBookmark">Add Bookmark</button>
+    <div class="container"></div>
 
-<div class="container">
-  <div>
-    <div class="title">Your bookmarks for this video</div>
-
-    <div class="bookmarks" id="bookmarks"></div>
-  </div>
-</div>
+    <script type="module" src="popup.js"></script>
+</body>
+</html>
